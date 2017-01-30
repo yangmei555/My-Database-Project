@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Insert</title>
+</head>
+<body>
+
+<h1>Data Delete Functions</h1>
+<br>
+<br>
+
+<b>No 1. </b> Enter a name of a devil fruit, and then delete the tutple from table "DevilFruit"
+whose fruitname is your input! All the names of the devil fruits can be viewed
+<a href="query12.php">here</a>! For this function, you can just input a partial name of a devil
+fruit!
+<p>
+<form action="delete_1.php" method="post">
+    Please enter the name of the devil fruit: <input type="text" name="devilfruit"><br/>
+    <input type="submit" value="Submit"/>
+</form>
+<br/>
+<hr>
+<br/>
+<br/>
+
+<b>No 2. </b> Delete a tuple in table "Participate"! You can choose the name of characters and
+the name of big events that the character participates from these two drop down menus! You can view
+the table "Participate" <a href="query13.php">here</a>!
+<p>
+<form action="delete_2.php" method="post">
+    The name of the character: <select name="charname">
+    <option value="Monkey D. Luffy">Monkey D. Luffy</option>
+    <option value="Roronoa Zoro">Roronoa Zoro</option>
+    <option value="Vinsmoke Sanji">Vinsmoke Sanji</option>
+    <option value="Nami">Nami</option>
+    <option value="Usopp">Usopp</option>
+    <option value="Tony Tony Chopper">Tony Tony Chopper</option>
+    <option value="Nico Robin">Nico Robin</option>
+    <option value="Franky">Franky</option>
+    <option value="Brook">Brook</option>
+    <option value="Donquixote Doflamingo">Donquixote Doflamingo</option>
+    <option value="Sir Crocodile">Sir Crocodile</option>
+    <option value="Boa Hancock">Boa Hancock</option>
+    <option value="Gol D. Roger">Gol D. Roger</option>
+    <option value="Silvers Rayleigh">Silvers Rayleigh</option>
+    <option value="Edward Newgate">Edward Newgate</option>
+    <option value="Shanks">Shanks</option>
+    <option value="Charlotte Linlin">Charlotte Linlin</option>
+    <option value="Kaido">Kaido</option>
+    <option value="Marshall D. Teach">Marshall D. Teach</option>
+    <option value="Bartholomew Kuma">Bartholomew Kuma</option>
+    <option value="Buggy">Buggy</option>
+    <option value="Dracule Mihawk">Dracule Mihawk</option>
+    <option value="Jinbe">Jinbe</option>
+    <option value="Gekko Moria">Gekko Moria</option>
+    <option value="Trafalgar Law">Trafalgar Law</option>
+    <option value="Sakazuki">Sakazuki</option>
+    <option value="Borsalino">Borsalino</option>
+    <option value="Kuzan">Kuzan</option>
+    <option value="Sengoku">Sengoku</option>
+    <option value="Monkey D. Garp">Monkey D. Garp</option></select> <br/>
+    The name of the big event that the character may participate in: <select name="eventname">
+    <option value="East sea episode">East sea episode</option>
+    <option value="Alabasta episode">Alabasta episode</option>
+    <option value="Sky Piea episode">Sky Piea episode</option>
+    <option value="Enies Lobby episode">Enies Lobby episode</option>
+    <option value="Thriller Barque episode">Thriller Barque episode</option>
+    <option value="Women Island episode">Women Island episode</option>
+    <option value="Impel Down episode">Impel Down episode</option>
+    <option value="Top war">Top war</option>
+    <option value="Fishman Island episode">Fishman Island episode</option>
+    <option value="Punk Hazard episode">Punk Hazard episode</option>
+    <option value="Dressrosa episode">Dressrosa episode</option>
+</select> <br/>
+    <input type="submit" value="Submit"/>
+</form>
+<br/>
+<hr>
+<br/>
+<br/>
+
+
+<b>No 3. </b> Input a certain age and a certain height, delete the tuples from table "Characters"
+whose age is larger than your input and whose height is shorter than your input! You can view
+the table "Characters" <a href="query14.php">here</a>!
+<p>
+<form action="delete_3.php" method="post">
+    Please input a certain age:<input type="text" name="age"><br/>
+    Please input a certain height:<input type="text" name="height"><br/>
+    <input type="submit" value="Submit"/>
+</form>
+<br/>
+<hr>
+<br/>
+<br/>
+
+
+
+</body>
+</html>

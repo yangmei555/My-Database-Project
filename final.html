@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MPCS53001 Web Interface -- myang3</title>
+</head>
+<body>
+<h1>MPCS53001 Web Interface -- myang3</h1>
+<br>
+<br>
+
+<p>
+    <b>This database is about the relations in One Piece!</b><br><br>
+    <img src="one_piece.jpg" width="800" height="600">
+</p>
+<br><br>
+
+<b>No 1. </b> See all the names of the tables in my database:
+<p>
+    <a href="list_tables.php">List my tables!</a>
+    <br>
+<hr>
+
+<br>
+
+<b>No 2. </b> See the names of all the characters!
+<p>
+    <a href="query2.php">See all the names!</a>
+    <br>
+<hr>
+<br>
+
+
+
+
+<b>No 3. </b> Find the name, reward amount, age and height of characters who have participated in the
+top war and have been to Marineford
+<p>
+    <a href="query3.php">Find those characters!</a>
+    <br>
+<hr>
+<br>
+
+<b>No 4. </b> Find those characters who belong to Straw Hat Pirates and have at least 3 friends
+<p>
+    <a href="query4.php">Find those characters!</a>
+    <br>
+<hr>
+<br>
+
+<b>No 5. </b>Find the average reward amount, average height, average age of the characters who participated
+in Dressrosa event and have been to at least 3 locations:
+<p>
+    <a href="query5.php">Find those data!</a>
+    <br>
+<hr>
+<br>
+
+<b>No 6. </b>Find the most powerful devil fruit owned by the character who belongs to the straw hat pirate:
+<p>
+    <a href="query6.php">Find that devil fruit and character!</a>
+    <br>
+<hr>
+<br>
+
+
+<b>No 7. </b>Input the name of a character, find all the attributes of him! The names of all the characters
+can be found <a href = "query2.php">here</a>:(you can enter a partial name of a character)
+<p>
+<form method=post action="list_attrs.php">
+    <b>Enter username:</b><br>
+    <input type="text" name="char">
+    <span class="error"> <?php echo $nameErr;?></span><br>
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+<hr>
+<br>
+
+<b>No 8. </b>Input a certain amount of money, find all the characters whose
+reward amount is above your input! You should only input integers and floating numbers!
+<p>
+<form method=post action="query8.php">
+    <b>Enter a number:</b><br>
+    <input type="text" name="number"><br>
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+<hr>
+<br>
+
+<b>No 9. </b>Input a certain location, find all the characters who have been to the location!
+<p>
+<form method=post action="query9.php">
+    <b>Enter a location:</b><br>
+    <input type="text" name="location"><br>
+    <input type="submit" value="Submit">
+</form>
+You can find all the locations through the following link:(you can enter a partial name of a location)
+<p>
+    <a href="query9_2.php">See all of the locations!</a>
+    <br>
+<hr>
+<br>
+
+
+<b>No 10. </b>Input a certain age and a certain height, find all the characters who are above the input age
+and are shorter than the input height(you should only input integers or floating numbers):
+<p>
+<form method=post action="query10.php">
+    <b>Enter an age:</b><input type="text" name="age"><br>
+    <b>Enter an height:</b><input type="text" name="height"><br>
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+<hr>
+<br>
+
+<b>No 11. </b>Input a certain character, find all the friends and enemies of that character!
+The names of all the characters can be found <a href="query2.php">here</a> !(For this function,
+you must enter the full name of a character)
+<p>
+<form method=post action="query11.php">
+    <b>Enter the name of a character :</b><br>
+    <input type="text" name="char"><br>
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+<hr>
+<br>
+
+
+<b>No 12. </b>Click this link to view the data insert functions!
+<p>
+    <a href="insert.html">View the insert functions!</a>
+    <br>
+
+<hr>
+<br>
+
+<b>No 13. </b>Click this link to view the data update functions!
+<p>
+    <a href="update.html">View the update functions!</a>
+    <br>
+
+<hr>
+<br>
+
+<b>No 14. </b>Click this link to view the data delete functions!
+<p>
+    <a href="delete.html">View the delete functions!</a>
+    <br>
+
+<hr>
+<br>
+
+</body>
+</html>

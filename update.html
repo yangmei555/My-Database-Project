@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Insert</title>
+</head>
+<body>
+
+<h1>Data Update Functions</h1>
+<br>
+<br>
+
+<b>No 1. </b> Update a tuple in table "Location"! You can choose a location from the drop down menu and then enter its
+new area in the input box!
+<p>
+<form action="update_1.php" method="post">
+    The name of the location: <select name="locname">
+    <option value="Enies Lobby">Enies Lobby</option>
+    <option value="East Sea">East Sea</option>
+    <option value="South Sea">South Sea</option>
+    <option value="Impel Down">Impel Down</option>
+    <option value="Fishman Island">Fishman Island</option>
+    <option value="Shampoo Islands">Shampoo Islands</option>
+    <option value="Women Island">Women Island</option>
+    <option value="Dressrosa">Dressrosa</option>
+    <option value="Punk Hazard">Punk Hazard</option>
+    <option value="Alabasta">Alabasta</option>
+    <option value="West Sea">West Sea</option>
+    <option value="North Sea">North Sea</option>
+    <option value="Marineford">Marineford</option></select> <br/>
+    The area of the location:<input type="text" name="area"><br/>
+    <input type="submit" value="Submit"/>
+</form>
+<br/>
+<hr>
+<br/>
+<br/>
+
+<b>No 2. </b> Update a tuple in table "BelongsTo1"! You should choose some of the characters and the organizations which the
+character belongs to from the drop down menu and then update this information!
+<p>
+<form action="update_2.php" method="post">
+    The name of the character: <select name="charname">
+    <option value="Monkey D. Luffy">Monkey D. Luffy</option>
+    <option value="Roronoa Zoro">Roronoa Zoro</option>
+    <option value="Vinsmoke Sanji">Vinsmoke Sanji</option>
+    <option value="Nami">Nami</option>
+    <option value="Usopp">Usopp</option>
+    <option value="Tony Tony Chopper">Tony Tony Chopper</option>
+    <option value="Nico Robin">Nico Robin</option>
+    <option value="Franky">Franky</option>
+    <option value="Brook">Brook</option>
+    <option value="Donquixote Doflamingo">Donquixote Doflamingo</option>
+    <option value="Sir Crocodile">Sir Crocodile</option>
+    <option value="Boa Hancock">Boa Hancock</option>
+    <option value="Gol D. Roger">Gol D. Roger</option>
+    <option value="Silvers Rayleigh">Silvers Rayleigh</option>
+    <option value="Edward Newgate">Edward Newgate</option>
+    <option value="Shanks">Shanks</option>
+    <option value="Charlotte Linlin">Charlotte Linlin</option>
+    <option value="Kaido">Kaido</option>
+    <option value="Marshall D. Teach">Marshall D. Teach</option>
+    <option value="Bartholomew Kuma">Bartholomew Kuma</option>
+    <option value="Buggy">Buggy</option>
+    <option value="Dracule Mihawk">Dracule Mihawk</option>
+    <option value="Jinbe">Jinbe</option>
+    <option value="Gekko Moria">Gekko Moria</option>
+    <option value="Trafalgar Law">Trafalgar Law</option>
+    <option value="Sakazuki">Sakazuki</option>
+    <option value="Borsalino">Borsalino</option>
+    <option value="Kuzan">Kuzan</option>
+    <option value="Sengoku">Sengoku</option>
+    <option value="Monkey D. Garp">Monkey D. Garp</option></select> <br/>
+    The name of the organization that the character belongs to: <select name="orgname">
+    <option value="Straw Hat Pirates">Straw Hat Pirates</option>
+    <option value="Red Hair Pirates">Red Hair Pirates</option>
+    <option value="Roger Pirates">Roger Pirates</option>
+    <option value="White Beard Pirates">White Beard Pirates</option>
+    <option value="Black Beard Pirates">Black Beard Pirates</option>
+    <option value="Donquixote Pirates">Donquixote Pirates</option>
+    <option value="Buggy Pirates">Buggy Pirates</option>
+    <option value="Nine Snake Pirates">Nine Snake Pirates</option>
+    <option value="Wild Beast Pirates">Wild Beast Pirates</option>
+    <option value="Big Mom Pirates">Big Mom Pirates</option>
+    <option value="The Baroque Workshop">The Baroque Workshop</option>
+    <option value="Thriller Barque">Thriller Barque</option>
+    <option value="Heart Pirates">Heart Pirates</option>
+    <option value="Fishman Pirates">Fishman Pirates</option>
+    </select> <br/>
+    <input type="submit" value="Submit"/>
+</form>
+<br/>
+<hr>
+<br/>
+<br/>
+
+
+<b>No 3. </b> Update the reward amount of a character in table "Characters"!
+If the reward amount is greater than the original value and the age is also greater than the original value,
+do the update. Otherwise, keep the original value! For this function, you must input the values of reward amount,
+age and height!
+<p>
+<form action="update_3.php" method="post">
+    The name of the character: <select name="char_name">
+    <option value="Monkey D. Luffy">Monkey D. Luffy</option>
+    <option value="Roronoa Zoro">Roronoa Zoro</option>
+    <option value="Vinsmoke Sanji">Vinsmoke Sanji</option>
+    <option value="Nami">Nami</option>
+    <option value="Usopp">Usopp</option>
+    <option value="Tony Tony Chopper">Tony Tony Chopper</option>
+    <option value="Nico Robin">Nico Robin</option>
+    <option value="Franky">Franky</option>
+    <option value="Brook">Brook</option>
+    <option value="Donquixote Doflamingo">Donquixote Doflamingo</option>
+    <option value="Sir Crocodile">Sir Crocodile</option>
+    <option value="Boa Hancock">Boa Hancock</option>
+    <option value="Gol D. Roger">Gol D. Roger</option>
+    <option value="Silvers Rayleigh">Silvers Rayleigh</option>
+    <option value="Edward Newgate">Edward Newgate</option>
+    <option value="Shanks">Shanks</option>
+    <option value="Charlotte Linlin">Charlotte Linlin</option>
+    <option value="Kaido">Kaido</option>
+    <option value="Marshall D. Teach">Marshall D. Teach</option>
+    <option value="Bartholomew Kuma">Bartholomew Kuma</option>
+    <option value="Buggy">Buggy</option>
+    <option value="Dracule Mihawk">Dracule Mihawk</option>
+    <option value="Jinbe">Jinbe</option>
+    <option value="Gekko Moria">Gekko Moria</option>
+    <option value="Trafalgar Law">Trafalgar Law</option>
+    <option value="Sakazuki">Sakazuki</option>
+    <option value="Borsalino">Borsalino</option>
+    <option value="Kuzan">Kuzan</option>
+    <option value="Sengoku">Sengoku</option>
+    <option value="Monkey D. Garp">Monkey D. Garp</option></select> <br/>
+
+    The reward amount of the character:<input type="text" name="reward"><br/>
+    The age of the character:<input type="text" name="age"><br/>
+    The height of the character:<input type="text" name="height"><br/>
+    <input type="submit" value="Submit"/>
+</form>
+<br/>
+<hr>
+<br/>
+<br/>
+
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Insert</title>
+</head>
+<body>
+
+<h1>Data Insert Functions</h1>
+<br>
+<br>
+
+<b>No 1. </b> Insert a tuple into table "Organization"! For this function, you must enter all the
+attributes of a tuple!
+<p>
+<form action="insert_1.php" method="post">
+    The name of the organization(primary key): <input type="text" name="_orgname"><br/>
+    The leader of the organization: <input type="text" name="_leader"><br/>
+    The number of cadres in the organization: <input type="text" name="_numberofcadre"><br/>
+    <input type="submit" value="Submit"/>
+</form>
+<br/>
+<hr>
+<br/>
+<br/>
+
+<b>No 2. </b> Insert a tuple into table "BigEvent"! For this function, you can only set the values of
+"eventname" and "length" attributes, the "biggistenemy" attribute will be set as "Charlotte Linlin"
+as default!
+<p>
+<form action="insert_2.php" method="post">
+    The name of the event(primary key): <input type="text" name="eventname"><br/>
+    The length of the sections about this event: <input type="text" name="length"><br/>
+    The biggest enemy of this event: <input style="background-color: bisque" type="text"
+                                            value="Charlotte Linlin" readonly><br/>
+    <input type="submit" value="Submit"/>
+</form>
+<br/>
+<hr>
+<br/>
+<br/>
+
+
+<b>No 3. </b> Insert a tuple into table "Characters"! For this function, besides the primary key,
+you can choose to enter a value of an attribute or not. The gender will be set to "male" as default.
+If you do not enter an attribute, that attribute will be set as 0!
+<p>
+<form action="insert_3.php" method="post">
+    The name of the character(primary key): <input type="text" name="charname"><br/>
+    The gender of the character: <select name="gender">
+    <option value="male">male</option>
+    <option value="female">female</option></select> <br/>
+    The reward amount of the character: <input type="text" name="reward"><br/>
+    The age of the character:<input type="text" name="age"><br/>
+    The height of the character:<input type="text" name="height"><br/>
+    <input type="submit" value="Submit"/>
+</form>
+<br/>
+<hr>
+<br/>
+<br/>
+
+
+
+</body>
+</html>
